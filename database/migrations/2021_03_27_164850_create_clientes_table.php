@@ -22,6 +22,7 @@ class CreateClientesTable extends Migration
             $table->string('endereco',300)->nullable()->charset('latin1')->collation('latin1_swedish_ci');
             $table->string('complemento',200)->nullable()->charset('latin1')->collation('latin1_swedish_ci');
             $table->string('bairro',300)->nullable()->charset('latin1')->collation('latin1_swedish_ci');
+            $table->integer('numero')->nullable();
             $table->string('cidade',300)->nullable()->charset('latin1')->collation('latin1_swedish_ci');
             $table->char('estado',2)->nullable()->charset('latin1')->collation('latin1_swedish_ci');
             $table->timestamps();
